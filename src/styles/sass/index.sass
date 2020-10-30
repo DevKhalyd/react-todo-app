@@ -1,0 +1,134 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap')
+
+//Variables
+$color-white: #ffffff
+$color-blue: rgb(0, 4, 255)
+$color-red: rgba(255, 0, 0, 1)
+$color-purple-deep: #9901ff8e
+$color-purple-light: #9900ff
+$color-bg-form:#020733a4
+$font-title:'Trispace', sans-serif
+
+$test:#17c300
+
+//Apply to whole document
+//Tags
+*
+  border: none
+
+body
+  background-image: linear-gradient(to right, $color-blue, $color-red)
+
+h2
+  margin-top: 3%
+  color: $color-white
+  font-size: 40px
+  font-family: $font-title
+
+button
+  //This handle the textcolor
+  color: white
+  outline: none !important
+  //Vertical - Horizontal Paddings(Positional)
+  padding: 14px 20px
+  box-shadow: 0 0 10px $color-purple-deep
+
+  background-image: linear-gradient(to right, $color-purple-deep, $color-purple-light)
+  &:hover
+    background-image: linear-gradient(to right, $color-blue, $color-red)
+  &:focus
+    //This shadow seems too good
+    box-shadow: 0 0 10px #719ECE
+
+li
+  width: 670px
+  height: 60px
+  background-image: linear-gradient(to right, $color-purple-deep, $color-purple-light)
+  display: inline-block
+  margin-left: -40px
+  margin-top: 7.5px
+  //Round corners
+  border-radius: 7.5px
+  display: inline-block
+  .row
+    //All size parent
+    width: 100%
+    //center
+    .block
+      width: 100px
+      float: left
+      p
+        color: white
+        font-size: 20px
+        float: left
+        margin-left: 15px
+        //Avoid line breaks
+        white-space: nowrap
+        //More details
+        overflow: hidden
+        text-overflow: ellipsis
+
+    .block-right
+      margin-top: 17.5px
+      width: 50px
+      float: right
+      padding-right: 10px
+
+//classes
+
+.center
+  margin: 0 auto
+
+.container-main
+  @extend .center
+  width: 700px
+  height: 850px
+  background-color: $color-bg-form
+  text-align: center
+  padding: 7.50px
+  margin-top: 3.5%
+  display: table
+
+//Place where is enter the data by the user
+.input-user
+  background-color: black
+  color: white
+  width: 60%
+  padding: 15px 20px
+  box-sizing: border-box
+  border: 2.5px solid purple
+  border-radius: 4px
+  &:hover
+    border: 2.5px solid green
+  &:focus
+    //Remove the line when is focused
+    outline: none !important
+    border: 2.5px solid red
+    //This shadow seems too good
+    box-shadow: 0 0 10px #719ECE
+
+.input-edit
+  width: 82.9%
+  padding: 25px 10px
+  color: white
+  background-color: black
+
+.button-edit
+  color: white
+  outline: none !important
+  //Vertical - Horizontal Paddings(Positional)
+  padding: 24.58px 20px
+  box-shadow: 0 0 10px $color-purple-deep
+  background-image: linear-gradient(to right, $color-purple-deep, $color-purple-light)
+  &:hover
+    background-image: linear-gradient(to right, $color-blue, $color-red)
+  &:focus
+    //This shadow seems too good
+    box-shadow: 0 0 10px #719ECE
+
+//Properties
+//:: Allow to customize the properties about each tag
+::placeholder
+  color: white
+  opacity: 1

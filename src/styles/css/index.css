@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Trispace&display=swap");
+* {
+  border: none;
+}
+
+body {
+  background-image: linear-gradient(to right, #0004ff, red);
+}
+
+h2 {
+  margin-top: 3%;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Trispace", sans-serif;
+}
+
+button {
+  color: white;
+  outline: none !important;
+  padding: 14px 20px;
+  box-shadow: 0 0 10px #9901ff8e;
+  background-image: linear-gradient(to right, #9901ff8e, #9900ff);
+}
+button:hover {
+  background-image: linear-gradient(to right, #0004ff, red);
+}
+button:focus {
+  box-shadow: 0 0 10px #719ECE;
+}
+
+li {
+  width: 670px;
+  height: 60px;
+  background-image: linear-gradient(to right, #9901ff8e, #9900ff);
+  display: inline-block;
+  margin-left: -40px;
+  margin-top: 7.5px;
+  border-radius: 7.5px;
+  display: inline-block;
+}
+li .row {
+  width: 100%;
+}
+li .row .block {
+  width: 100px;
+  float: left;
+}
+li .row .block p {
+  color: white;
+  font-size: 20px;
+  float: left;
+  margin-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+li .row .block-right {
+  margin-top: 17.5px;
+  width: 50px;
+  float: right;
+  padding-right: 10px;
+}
+
+.center, .container-main {
+  margin: 0 auto;
+}
+
+.container-main {
+  width: 700px;
+  height: 850px;
+  background-color: #020733a4;
+  text-align: center;
+  padding: 7.5px;
+  margin-top: 3.5%;
+  display: table;
+}
+
+.input-user {
+  background-color: black;
+  color: white;
+  width: 60%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border: 2.5px solid purple;
+  border-radius: 4px;
+}
+.input-user:hover {
+  border: 2.5px solid green;
+}
+.input-user:focus {
+  outline: none !important;
+  border: 2.5px solid red;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.input-edit {
+  width: 82.9%;
+  padding: 25px 10px;
+  color: white;
+  background-color: black;
+}
+
+.button-edit {
+  color: white;
+  outline: none !important;
+  padding: 24.58px 20px;
+  box-shadow: 0 0 10px #9901ff8e;
+  background-image: linear-gradient(to right, #9901ff8e, #9900ff);
+}
+.button-edit:hover {
+  background-image: linear-gradient(to right, #0004ff, red);
+}
+.button-edit:focus {
+  box-shadow: 0 0 10px #719ECE;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=index.css.map */
